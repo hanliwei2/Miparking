@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="17dp">
+
+    <TextView
+        android:id="@+id/itemLockListNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locklist_item_name"
+        android:textSize="18sp"
+        android:textColor="@color/item_locklist_name"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/itemLockListStausTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locklist_item_status_notconnect"
+        android:textSize="18sp"
+        android:textColor="@color/item_locklist_status"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/locklistEnterIV"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/locklistEnterIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grayenter_iv"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

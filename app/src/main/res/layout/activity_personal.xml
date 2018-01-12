@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/personalLL">
+
+    <!-- 返回按钮和标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellowBackground">
+
+        <RelativeLayout
+            android:id="@+id/personalBackRL"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_iv"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/personalTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_title_text"
+            android:textSize="18sp"
+            android:textColor="@color/blueBackground"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- 下半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <!-- 头像-->
+            <RelativeLayout
+                android:id="@+id/personalHeadRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_head_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_title"
+                    android:layout_centerVertical="true"/>
+
+                <!--<ImageView
+                    android:id="@+id/personalHeadIV"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@color/blueBackground"
+                    android:layout_toLeftOf="@+id/personalHeadIV2"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>-->
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/personalHeadIV"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logo_iv"
+                    android:layout_toLeftOf="@+id/personalHeadIV2"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    app:riv_oval="true" />
+
+
+                <ImageView
+                    android:id="@+id/personalHeadIV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grayenter_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lockDetailsDivider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lockdetail_devider"
+                >
+
+            </View>
+
+            <!-- 昵称-->
+            <RelativeLayout
+                android:id="@+id/personalNickNameRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="17dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_nickname_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_title" />
+
+                <TextView
+                    android:id="@+id/personalNickNameContentTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_nickname_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_content"
+                    android:layout_toLeftOf="@+id/personalNickNameContentIV"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/personalNickNameContentIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grayenter_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lockDetailsDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lockdetail_devider"
+                >
+
+            </View>
+
+            <!-- 性别-->
+            <RelativeLayout
+                android:id="@+id/personalSexRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="17dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_sex_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_title"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/personalSexContentTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_sex_male"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_content"
+                    android:layout_toLeftOf="@+id/personalSexContentIV"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/personalSexContentIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grayenter_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lockDetailsDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lockdetail_devider"
+                >
+
+            </View>
+
+            <!-- 年龄-->
+            <RelativeLayout
+                android:id="@+id/personalAgeRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="17dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_age_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_title"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/personalAgeContentTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_age_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_content"
+                    android:layout_toLeftOf="@+id/personalAgeContentIV"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/personalAgeContentIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grayenter_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/lockDetailsDivider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lockdetail_devider"
+                >
+
+            </View>
+
+            <!-- 手机号码-->
+            <RelativeLayout
+                android:id="@+id/personalPhoneRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="17dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_phone_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_title"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/personalPhoneContentTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_phone_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/item_lockdetails_content"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <!-- 退出登录按钮-->
+            <TextView
+                android:id="@+id/personalLogoutTV"
+                android:layout_width="281dp"
+                android:layout_height="36dp"
+                android:background="@drawable/personal_logout_bg"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/personal_logout_title"
+                android:textColor="@color/blueBackground"
+                android:textSize="15sp"
+                android:layout_marginTop="50dp"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/lockDetailsBottomIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/graylogo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

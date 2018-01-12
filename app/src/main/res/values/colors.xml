@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 区号列表用到的颜色-->
+    <drawable name="smssdk_dialog_btn_nor">#00000000</drawable>
+    <drawable name="smssdk_dialog_btn_pre">#ff282a2b</drawable>
+
+    <color name="smssdk_white">#ffffffff</color>
+    <color name="smssdk_gray_press">#fff2f2f2</color>
+    <color name="smssdk_transparent">#00000000</color>
+    <color name="smssdk_lv_tv_color">#ff353535</color>
+    <color name="smssdk_lv_title_color">#ff999999</color>
+    <color name="smssdk_lv_item_selector">#f7fcff</color>
+    <color name="smssdk_lv_item_divider">#ffd9d9da</color>
+    <color name="smssdk_black">#ff000000</color>
+    <color name="smssdk_gray">#ff898989</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellowBackground">#F9C528</color> <!-- 249,197,40-->
+    <color name="blueBackground">#25A5FF</color> <!-- 37,165,255-->
+    <color name="whiteBackground">#F0F0F0</color> <!-- 240,240,240-->
+    <color name="redBackground">#FF5455</color> <!-- 255,84,85-->
+    <color name="settingText">#525252</color>
+    <color name="lockmanagerContent">#A3A3A3</color>
+    <color name="systemmsg_date">#A3A3A3</color>
+    <color name="item_locklist_name">#676767</color>
+    <color name="item_locklist_status">#C3C5C9</color>
+    <color name="lockdetail_devider">#E0E0E0</color>
+    <color name="item_lockdetails_title">#676767</color>
+    <color name="item_lockdetails_content">#C3C5C9</color>
+
+    <!-- 密码输入框-->
+
+    <color name="gray_text">#919191</color>
+    <color name="gray_btn">#EBEBEB</color>
+
+    <color name="gray_bg">#f0eff5</color>
+    <color name="gray_line">#ebebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#212121</color>
+</resources>

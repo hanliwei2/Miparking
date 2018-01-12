@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowBackground">
+
+    <!-- 返回按钮-->
+    <RelativeLayout
+        android:id="@+id/createpwdBackRL"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_iv"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <!-- 创建密码文字-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/createpwd_title_text"
+        android:textColor="@color/blueBackground"
+        android:textSize="31sp" />
+
+    <TextView
+        android:id="@+id/createpwdContentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createpwd_content_text"
+        android:textSize="18sp"
+        android:textColor="@color/blueBackground"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"/>
+
+    <!-- 密码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createpwd_createpwd_text"
+            android:textSize="13sp"
+            android:textColor="@color/blueBackground"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            />
+
+        <TextView
+            android:id="@+id/createpwdShowPwdTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createpwd_show_text"
+            android:textSize="13sp"
+            android:textColor="@color/blueBackground"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/createpwdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/blueBackground"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="24dp"
+        android:background="@null"
+        android:inputType="textPassword" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blueBackground"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp">
+
+    </View>
+
+    <!-- 下一步按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp">
+
+        <ImageView
+            android:id="@+id/createpwdNextIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn_bg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

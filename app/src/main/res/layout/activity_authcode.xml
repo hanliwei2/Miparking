@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowBackground">
+
+    <!-- 返回按钮-->
+    <RelativeLayout
+        android:id="@+id/authcodeBackRL"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_iv"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <!-- 输入验证码文字-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authcode_title_text"
+        android:textSize="31sp"
+        android:textColor="@color/blueBackground"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/authcodeContentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authcode_content_text3"
+        android:textSize="18sp"
+        android:textColor="@color/blueBackground"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"/>
+
+    <!-- 验证码-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authcode_authcode_text"
+        android:textSize="13sp"
+        android:textColor="@color/blueBackground"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="58dp"/>
+
+
+        <EditText
+            android:id="@+id/authcodeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/blueBackground"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="24dp"
+            android:background="@null" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blueBackground"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp">
+
+    </View>
+
+    <!-- 下一步按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp">
+
+        <ImageView
+            android:id="@+id/authcodeNextIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn_bg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

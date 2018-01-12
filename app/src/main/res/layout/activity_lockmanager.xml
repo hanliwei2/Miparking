@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lockManagerLL">
+
+    <!-- 返回按钮和标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellowBackground">
+
+        <RelativeLayout
+            android:id="@+id/lockmanagerBackRL"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_iv"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lockmanager_title_text"
+            android:textSize="18sp"
+            android:textColor="@color/blueBackground"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/lockManagerAddTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lockmanager_add_text"
+            android:textSize="18sp"
+            android:textColor="@color/blueBackground"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <!-- 下半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical"
+        >
+
+        <!-- 这是没有配对设备时的LinearLayout-->
+        <!-- 没有已配对的地锁时，显示这个LinearLayout，并隐藏掉已配对设备的ListView-->
+        <LinearLayout
+            android:id="@+id/lockManagerNoLockLL"
+            android:layout_width="334dp"
+            android:layout_height="367dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lockmanager_plaint_iv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="64dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lockmanager_content_text"
+                android:textSize="12sp"
+                android:textColor="@color/lockmanagerContent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="22dp"/>
+
+            <!-- 设备配对按钮-->
+            <TextView
+                android:id="@+id/lockmanagerDevicePairTV"
+                android:layout_width="281dp"
+                android:layout_height="36dp"
+                android:background="@drawable/lockmanager_devicepair_bg"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/lockmanager_devicepair_text"
+                android:textColor="@color/blueBackground"
+                android:textSize="15sp"
+                android:layout_marginTop="35dp"/>
+
+            <!-- 扫描配对按钮-->
+            <TextView
+                android:id="@+id/lockmanagerScanPairTV"
+                android:layout_width="281dp"
+                android:layout_height="36dp"
+                android:background="@drawable/lockmanager_devicepair_bg"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/lockmanager_scanpair_text"
+                android:textColor="@color/blueBackground"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <!-- 这是有已配对设备时的ListView-->
+        <!-- 有已配对的地锁时，显示这个ListView,并隐藏掉配对设备的LinearLayout-->
+        <ListView
+            android:id="@+id/lockManagerHasConnectedLV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/lockManagerBottomIV"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:scrollbars="none"
+            android:smoothScrollbar="false"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:fadingEdgeLength="0dip"
+            android:fastScrollEnabled="false"
+            android:visibility="gone">
+
+        </ListView>
+
+        <ImageView
+            android:id="@+id/lockManagerBottomIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/graylogo_iv"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

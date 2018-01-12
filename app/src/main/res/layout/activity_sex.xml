@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 返回按钮和标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellowBackground">
+
+        <RelativeLayout
+            android:id="@+id/sexBackRL"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_iv"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex_title_text"
+            android:textSize="18sp"
+            android:textColor="@color/blueBackground"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp">
+        
+        <RadioButton
+            android:id="@+id/sexMaleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_sex_male"
+            android:textSize="20sp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/sexFemaleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/personal_sex_female"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!-- 保存按钮-->
+    <TextView
+        android:id="@+id/sexSaveTV"
+        android:layout_width="281dp"
+        android:layout_height="36dp"
+        android:background="@drawable/personal_save_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/personal_save_text"
+        android:textColor="@color/blueBackground"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

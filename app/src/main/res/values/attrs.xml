@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 轮播图上的圆点指示器-->
+    <declare-styleable name="CustomIndicator">
+        <attr name="indcount" format="integer"/>
+        <attr name="width" format="dimension"/>
+        <attr name="height" format="dimension"/>
+        <attr name="margin" format="dimension"/>
+        <attr name="normal_icon" format="reference"/>
+        <attr name="selected_icon" format="reference"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/addPopwindowLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteBackground">
+
+    <!-- 设备配对按钮-->
+    <TextView
+        android:id="@+id/popwindowDevicePairTV"
+        android:layout_width="281dp"
+        android:layout_height="36dp"
+        android:background="@drawable/lockmanager_devicepair_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/lockmanager_devicepair_text"
+        android:textColor="@color/blueBackground"
+        android:textSize="15sp"
+        android:layout_marginTop="35dp"/>
+
+    <!-- 扫描配对按钮-->
+    <TextView
+        android:id="@+id/popwindowScanPairTV"
+        android:layout_width="281dp"
+        android:layout_height="36dp"
+        android:background="@drawable/lockmanager_devicepair_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/lockmanager_scanpair_text"
+        android:textColor="@color/blueBackground"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- 取消按钮-->
+    <TextView
+        android:id="@+id/popwindowCancleTV"
+        android:layout_width="281dp"
+        android:layout_height="36dp"
+        android:background="@drawable/popwindow_cancle_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/lockmanager_cancle_text"
+        android:textColor="@color/blueBackground"
+        android:textSize="15sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/iconPopwindowLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteBackground">
+
+        <!-- 打开相机按钮-->
+        <TextView
+            android:id="@+id/popwindowCameraTV"
+            android:layout_width="281dp"
+            android:layout_height="36dp"
+            android:background="@drawable/popwindow_icon_camera_bg"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/icon_camera_text"
+            android:textColor="@color/blueBackground"
+            android:textSize="15sp"
+            android:layout_marginTop="35dp"/>
+
+        <!-- 打开相册按钮-->
+        <TextView
+            android:id="@+id/popwindowAlbumTV"
+            android:layout_width="281dp"
+            android:layout_height="36dp"
+            android:background="@drawable/popwindow_icon_album_bg"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/icon_album_text"
+            android:textColor="@color/blueBackground"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"/>
+
+        <!-- 取消按钮-->
+        <TextView
+            android:id="@+id/popwindowIconCancleTV"
+            android:layout_width="281dp"
+            android:layout_height="36dp"
+            android:background="@drawable/popwindow_cancle_bg"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/lockmanager_cancle_text"
+            android:textColor="@color/blueBackground"
+            android:textSize="15sp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

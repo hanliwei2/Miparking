@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:indic="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sziton.miparking.activity.MainActivity"
+    android:orientation="vertical">
+    <!-- 上半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <!--        <ImageView
+            android:id="@+id/mainHeadIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/logo_iv" />-->
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/mainHeadIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/logo_iv"
+            app:riv_oval="true" />
+
+        <com.sziton.miparking.custom.CustomIndicator
+            android:id="@+id/mainIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            indic:height="20dp"
+            indic:margin="20dp"
+            indic:normal_icon="@drawable/main_normal_indicator_iv"
+            indic:selected_icon="@drawable/main_selected_indicator_iv"
+            indic:width="20dp"></com.sziton.miparking.custom.CustomIndicator>
+    </RelativeLayout>
+
+    <!-- 下半部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/whiteBackground">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/mainLockIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_lock_iv"/>
+
+            <ImageView
+                android:id="@+id/mainOpenIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_open_iv"
+                android:layout_toRightOf="@+id/mainLockIV"
+                android:layout_marginLeft="54dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/graylogo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
